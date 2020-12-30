@@ -22,7 +22,7 @@ $(window).load(function () {
     log
     projectionContext.drawImage(img, 0, 0, img.width, img.height);
 
-    console.log("drawImage ");
+    // console.log("drawImage ");
     var pixelData = null;
 
     var maxLat = -100;
