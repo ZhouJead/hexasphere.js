@@ -19,10 +19,8 @@ $(window).load(function () {
 
     projectionCanvas.width = img.width;
     projectionCanvas.height = img.height;
-    log
     projectionContext.drawImage(img, 0, 0, img.width, img.height);
 
-    // console.log("drawImage ");
     var pixelData = null;
 
     var maxLat = -100;
@@ -38,7 +36,6 @@ $(window).load(function () {
         if (pixelData == null) {
             pixelData = projectionContext.getImageData(0, 0, img.width, img.height);
         }
-        // console.log("width: " + pixelData.width);
         return pixelData.data[(y * pixelData.width + x) * 4] === 0;
     };
 
