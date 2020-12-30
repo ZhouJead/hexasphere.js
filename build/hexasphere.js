@@ -183,7 +183,7 @@
             
             // create tiles and store in a lookup for references
             for (var p in points) {
-                console.log("point: "+points[p]);
+                console.log("point[p]: "+points[p]);
                 var newTile = new Tile(points[p], hexSize);
                 this.tiles.push(newTile);
                 this.tileLookup[newTile.toString()] = newTile;
