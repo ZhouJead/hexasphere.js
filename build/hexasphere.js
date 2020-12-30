@@ -177,7 +177,7 @@
 
             points = newPoints;
 
-            console.log(points[0]);
+            console.log("points: "+points[0]);
 
             this.tiles = [];
             this.tileLookup = {};
